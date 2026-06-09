@@ -1,0 +1,27 @@
+Preprocessing Metadata Report
+=============================
+Random Seed: 42
+
+Dataset Sizes (Raw):
+- Framingham: (4240, 16)
+- Cleveland: (303, 14)
+
+Split Sizes (Framingham Aligned & Cleaned):
+- Training features: (2513, 7)
+- Calibration features: (838, 7)
+- Holdout features: (838, 7)
+
+Class Distribution (Framingham):
+- Training (1/0): 380 / 2133
+- Calibration (1/0): 127 / 711
+- Holdout (1/0): 127 / 711
+
+Feature Count:
+- Training features: 7
+- Cleveland features: 7
+
+LRS Appended:
+- Framingham: Yes
+- Cleveland: No
+
+Scaler: Fitted on Training data only.

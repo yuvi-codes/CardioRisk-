@@ -1,0 +1,27 @@
+# Dataset Configuration — CVD Risk Predictor
+# Aligned with AGENTS.md Section 2 (Contributions) and Section 7 (LRS Specification)
+
+# --- Raw data paths ---
+framingham_raw_path: data/raw/framingham.csv
+cleveland_raw_path: data/raw/cleveland.csv
+
+# --- Processed data paths ---
+framingham_processed_path: data/processed/framingham_clean.csv
+cleveland_processed_path: data/processed/cleveland_clean.csv
+
+# --- Target columns ---
+framingham_target_column: TenYearCHD
+cleveland_target_column: target
+
+# --- Lifestyle Risk Score (LRS) ---
+# Per AGENTS.md §7: each component normalised to 0–1, equal weights (0.2 each)
+# Weight choice: equal weights justified by treating all lifestyle factors as
+# equally contributory in absence of domain-specific weighting evidence.
+lrs_components:
+  - sleep_regularity
+  - activity_mets
+  - smoking_packyears
+  - sedentary_hours
+  - alcohol_units
+
+lrs_weights: [0.2, 0.2, 0.2, 0.2, 0.2]

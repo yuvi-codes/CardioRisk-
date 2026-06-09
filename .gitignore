@@ -1,0 +1,17 @@
+# Model artifacts (too large for git)
+models/*.pkl
+models/feature_columns.json
+
+# Data
+data/raw/
+data/processed/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+wandb/
+
+# Node
+frontend/node_modules/
+frontend/dist/

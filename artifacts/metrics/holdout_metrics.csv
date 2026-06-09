@@ -1,0 +1,4 @@
+model,auc_roc,auc_pr,brier,accuracy,sensitivity,specificity,ppv,npv,f1,tp,fp,fn,tn
+XGBoost + Calibration (final),0.6796,0.2831,0.124,0.8388,0.0541,0.9791,0.3158,0.8527,0.0923,6,13,105,608
+XGBoost (uncalibrated),0.7089,0.3352,0.1182,0.8484,0.0,1.0,0.0,0.8484,0.0,0,0,111,621
+Logistic Regression,0.711,0.3621,0.1171,0.8525,0.027,1.0,1.0,0.8519,0.0526,3,0,108,621

@@ -1,0 +1,30 @@
+# Model Configuration — CVD Risk Predictor
+# Aligned with AGENTS.md Section 4 (Data Split) and Section 5 (Modeling Pipeline)
+
+random_seed: 42
+
+# Data split ratios (must sum to 1.0) — FIXED, NON-NEGOTIABLE per AGENTS.md §4
+train_size: 0.60
+calibration_size: 0.20
+test_size: 0.20
+
+# Cross-validation folds for hyperparameter tuning
+cv_folds: 5
+
+# Conformal prediction significance level (90% confidence → alpha = 0.10)
+conformal_alpha: 0.10
+
+# --- Hyperparameter Grids ---
+
+xgboost:
+  n_estimators: [100, 200, 300]
+  max_depth: [3, 5, 7]
+  learning_rate: [0.01, 0.1, 0.3]
+  subsample: [0.8, 1.0]
+  colsample_bytree: [0.8, 1.0]
+
+logistic_regression:
+  C: [0.01, 0.1, 1, 10]
+  solver: [lbfgs, liblinear]
+  penalty: [l2]
+  max_iter: 1000

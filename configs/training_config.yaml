@@ -1,0 +1,18 @@
+# Training Configuration — CVD Risk Predictor
+# Aligned with AGENTS.md Section 8 (Tech Stack) — W&B is MANDATORY
+
+# --- Weights & Biases ---
+wandb_project: cvd-risk-predictor
+wandb_tags:
+  - xgboost
+  - calibration
+  - conformal
+  - shap
+  - lrs
+
+# --- Output directories ---
+model_output_dir: models/
+artifacts_dir: artifacts/
+
+# --- Logging ---
+log_level: INFO

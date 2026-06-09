@@ -1,0 +1,37 @@
+original_name,dataset,standardised_name,dropped,reason
+male,framingham,sex,False,
+age,framingham,age,False,
+education,framingham,,True,"Socio-demographic variable, not a clinical risk factor; no Cleveland equivalent"
+currentSmoker,framingham,,True,Binary smoking flag; no Cleveland equivalent. Captured by LRS
+cigsPerDay,framingham,,True,Continuous smoking measure; no Cleveland equivalent. Captured by LRS
+BPMeds,framingham,,True,Blood-pressure medication flag; no Cleveland equivalent
+prevalentStroke,framingham,,True,Medical history flag; no Cleveland equivalent
+prevalentHyp,framingham,,True,Medical history flag; no Cleveland equivalent
+diabetes,framingham,fasting_blood_sugar,False,
+totChol,framingham,cholesterol,False,
+sysBP,framingham,systolic_bp,False,
+diaBP,framingham,,True,Diastolic BP; Cleveland only records systolic-equivalent trestbps
+BMI,framingham,,True,Body mass index; no Cleveland equivalent
+heartRate,framingham,max_heart_rate,False,
+glucose,framingham,,True,Continuous fasting glucose; Cleveland uses binary fbs instead
+TenYearCHD,framingham,TenYearCHD,False,Target column (retained as-is)
+smoking_packyears,framingham,,True,No equivalent column in Cleveland dataset
+sedentary_hours,framingham,,True,No equivalent column in Cleveland dataset
+activity_mets,framingham,,True,No equivalent column in Cleveland dataset
+sleep_regularity,framingham,,True,No equivalent column in Cleveland dataset
+alcohol_units,framingham,,True,No equivalent column in Cleveland dataset
+LRS,framingham,,True,No equivalent column in Cleveland dataset
+age,cleveland,age,False,
+sex,cleveland,sex,False,
+cp,cleveland,,True,Chest pain type (4 categories); no Framingham equivalent
+trestbps,cleveland,systolic_bp,False,
+chol,cleveland,cholesterol,False,
+fbs,cleveland,fasting_blood_sugar,False,
+restecg,cleveland,,True,Resting ECG result; no Framingham equivalent
+thalach,cleveland,max_heart_rate,False,
+exang,cleveland,,True,Exercise-induced angina; no Framingham equivalent
+oldpeak,cleveland,,True,ST depression induced by exercise; no Framingham equivalent
+slope,cleveland,,True,Slope of peak exercise ST segment; no Framingham equivalent
+ca,cleveland,,True,Number of major vessels coloured by fluoroscopy; no Framingham equivalent
+thal,cleveland,,True,Thalassemia type; no Framingham equivalent
+target,cleveland,target,False,Target column (retained as-is)
